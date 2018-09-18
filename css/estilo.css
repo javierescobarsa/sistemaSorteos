@@ -1,0 +1,363 @@
+
+@import "compass/css3";
+
+
+.donation-meter   strong { display: block; text-align: center; }
+  .donation-meter   .goal {
+    font-size: 30px;
+  }
+  .donation-meter   .total {
+    font-size: 16px;
+    position: absolute;
+    right: 35px;
+  }
+.donation-meter   .glass {
+    background: #e5e5e5;
+    border-radius: 100px 100px 0 0;
+    display: block;
+    height: 300px;
+    margin: 0 35px 10px;
+    padding: 5px;
+    position: relative;
+    width: 40px;
+    border-width: 2px;
+  }
+
+  .donation-meter   .amount {
+    background: #f34e54;
+    border-radius: 80px;
+    display: block;
+    width: 40px;
+    position: absolute;
+     bottom: -10px;
+     left: -0px;
+  }
+
+.donation-meter {
+  margin-left: 30px;
+  width: 300px;
+
+ 
+
+ 
+
+}
+
+.bulb {
+  background: #f34e54;
+  border-radius: 400px;
+  display: block;
+  height: 50px;
+  margin: 0 35px 10px;
+  padding: 5px;
+  position: relative;
+    top: -20px;
+    right: 0px;
+  width: 60px;
+ 
+
+}
+
+  
+.bulb .red-circle {
+    background: #f34e54;
+    border-radius: 100px;
+    display: block;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    right: 25px;
+  }
+    @font-face {
+        font-family: "Budmo";
+        src: url("budmo.ttf");
+    }
+
+    p {
+        font-family: "Budmo";
+        font-size: 150%;
+    }
+
+    .silver-header {
+        font-family: "Budmo";
+        src: url("budmo.ttf");
+        position: relative;
+        margin-top: 0;
+        margin-bottom: .25em;
+        color: white;
+        font-family: 'Baloo Thambi', cursive;
+        font-size: 4em;
+        text-transform: uppercase;
+        /*text-shadow:
+    0 0 4px rgb(255,255,255),
+    0 0 8px rgb(255,0,0),
+    0 0 16px rgb(255,0,0),
+    0 0 24px rgb(255,0,80),
+    0 0 48px rgb(255,0,80);*/
+    }
+
+
+    .bronce-header {
+        font-family: "Budmo";
+        src: url("css/casino.ttf");
+        position: relative;
+        margin-top: 0;
+        margin-bottom: .25em;
+        color: white;
+        font-family: 'Baloo Thambi', cursive;
+        font-size: 4em;
+        text-transform: uppercase;
+        /*text-shadow:
+    0 0 4px rgb(255,255,255),
+    0 0 8px rgb(255,0,0),
+    0 0 16px rgb(255,0,0),
+    0 0 24px rgb(255,0,80),
+    0 0 48px rgb(255,0,80);*/
+    }
+
+    .neon-header {
+        font-family: "Budmo";
+        src: url("budmo.ttf");
+        position: relative;
+        margin-top: 0;
+        margin-bottom: .25em;
+        color: white;
+        font-family: 'Baloo Thambi', cursive;
+        font-size: 4em;
+        text-transform: uppercase;
+        /*text-shadow:
+    0 0 4px rgb(255,255,255),
+    0 0 8px rgb(255,0,0),
+    0 0 16px rgb(255,0,0),
+    0 0 24px rgb(255,0,80),
+    0 0 48px rgb(255,0,80);*/
+    }
+
+    @keyframes neon-glow {
+        0% {
+            color: rgb(255, 255, 255);
+            text-shadow: 0 2px 0 rgb(220, 220, 220),
+            0 0 4px rgb(255, 255, 255),
+            0 0 4px transparent,
+            0 0 8px rgb(255, 0, 0),
+            0 0 16px rgb(255, 0, 0),
+            0 0 24px rgb(255, 0, 80),
+            0 0 48px rgb(255, 0, 80),
+            6px 20px 1px rgba(0, 0, 0, .75);
+        }
+        100% {
+            color: #E1E1E1;
+            color: rgba(255, 255, 255, .15);
+            text-shadow: 0 2px 0 rgb(220, 220, 220),
+            0 0 4px rgb(255, 255, 255),
+            0 0 16px rgb(255, 255, 255),
+            0 0 16px rgb(230, 171, 9),
+            0 0 32px rgb(236, 156, 8),
+            0 0 60px rgb(235, 97, 6),
+            0 0 100px rgb(240, 90, 9),
+            11px 25px 1px rgba(0, 0, 0, .75);
+        }
+    }
+
+    @keyframes silver-glow {
+        0% {
+            color: rgb(255, 255, 255);
+            text-shadow: 0 2px 0 rgb(220, 220, 220),
+            0 0 4px rgb(126, 126, 126),
+            0 0 16px rgb(126, 126, 126),
+            0 0 16px rgb(126, 126, 126),
+            0 0 32px rgb(51, 51, 51),
+            0 0 60px rgb(136, 135, 134),
+            0 0 100px rgb(156, 153, 151),
+            6px 20px 1px rgba(0, 0, 0, .75);
+        }
+        100% {
+            color: #E1E1E1;
+            color: rgba(255, 255, 255, .15);
+            text-shadow: 0 2px 0 rgb(220, 220, 220),
+            0 0 4px rgb(255, 255, 255),
+            0 0 16px rgb(255, 255, 255),
+            0 0 16px rgb(143, 141, 141),
+            0 0 32px rgb(126, 126, 126),
+            0 0 60px rgb(166, 166, 196),
+            0 0 100px rgb(126, 106, 106),
+            11px 25px 1px rgba(0, 0, 0, .75);
+        }
+    }
+
+    @keyframes bronce-glow {
+        0% {
+            color: rgb(255, 255, 255);
+            text-shadow: 0 2px 0 rgb(220, 220, 220),
+            0 0 4px rgb(255, 255, 255),
+            0 0 16px rgb(255, 255, 255),
+            0 0 16px rgb(230, 72, 9),
+            0 0 32px rgb(236, 82, 8),
+            0 0 60px rgb(235, 97, 6),
+            0 0 100px rgb(240, 90, 9),
+            6px 20px 1px rgba(0, 0, 0, .75);
+        }
+        100% {
+            color: #E1E1E1;
+            color: rgba(255, 255, 255, .15);
+            text-shadow: 0 2px 0 rgb(220, 220, 220),
+            0 0 4px rgb(255, 255, 255),
+            0 0 16px rgb(255, 255, 255),
+            0 0 16px rgb(255, 0, 0),
+            0 0 32px rgb(255, 90, 0),
+            0 0 60px rgb(255, 200, 80),
+            0 0 100px rgb(255, 200, 80),
+            11px 25px 1px rgba(0, 0, 0, .75);
+        }
+    }
+
+    @keyframes golden-glow {
+        0% {
+            color: rgb(255, 255, 255);
+            text-shadow: 0 2px 0 rgb(220, 220, 220),
+            0 0 4px rgb(255, 255, 255),
+            0 0 16px rgb(255, 255, 255),
+            0 0 16px rgb(230, 190, 9),
+            0 0 32px rgb(236, 200, 8),
+            0 0 60px rgb(235, 210, 6),
+            0 0 100px rgb(240, 90, 9),
+            6px 20px 1px rgba(0, 0, 0, .75);
+        }
+        100% {
+            color: #E1E1E1;
+            color: rgba(255, 255, 255, .15);
+            text-shadow: 0 2px 0 rgb(220, 220, 220),
+            0 0 4px rgb(255, 255, 255),
+            0 0 16px rgb(255, 255, 255),
+            0 0 16px rgb(255, 200, 0),
+            0 0 32px rgb(255, 255, 0),
+            0 0 60px rgb(255, 255, 80),
+            0 0 100px rgb(255, 200, 80),
+            11px 25px 1px rgba(0, 0, 0, .75);
+        }
+    }
+
+    .anim-golden-glow {
+        text-align: center;
+        font-family: "Budmo";
+        src: url("budmo.ttf");
+        animation-name: golden-glow;
+        animation-duration: 500ms;
+        animation-direction: alternate;
+        animation-timing-function: cubic-bezier(0, 1.31, 1, -0.48);
+        animation-iteration-count: infinite;
+    }
+
+    .anim-montoTermometro-glow {
+        text-align: center;
+
+        animation-name: golden-glow;
+        animation-duration: 500ms;
+        animation-direction: alternate;
+        animation-timing-function: cubic-bezier(0, 1.31, 1, -0.48);
+        animation-iteration-count: infinite;
+    }
+
+    .anim-bronce-glow {
+        text-align: center;
+        font-family: "Casino";
+        src: url("budmo.ttf");
+        animation-name: bronce-glow;
+        animation-duration: 500ms;
+        animation-direction: alternate;
+        animation-timing-function: cubic-bezier(0, 1.31, 1, -0.48);
+        animation-iteration-count: infinite;
+    }
+
+    .anim-silver-glow {
+        text-align: center;
+        font-family: "Casino";
+        src: url("Casino.ttf");
+        animation-name: silver-glow;
+        animation-duration: 500ms;
+        animation-direction: alternate;
+        animation-timing-function: cubic-bezier(0, 1.31, 1, -0.48);
+        animation-iteration-count: infinite;
+    }
+
+    .anim-plomo-glow {
+        text-align: center;
+  
+        animation-name: silver-glow;
+        animation-duration: 500ms;
+        animation-direction: alternate;
+        animation-timing-function: cubic-bezier(0, 1.31, 1, -0.48);
+        animation-iteration-count: infinite;
+    }
+
+
+    .anim-neon-glow {
+        text-align: center;
+        font-family: "Budmo";
+        src: url("budmo.ttf");
+        animation-name: neon-glow;
+        animation-duration: 500ms;
+        animation-direction: alternate;
+        animation-timing-function: cubic-bezier(0, 1.31, 1, -0.48);
+        animation-iteration-count: infinite;
+    }
+
+
+    .sombra {
+        -moz-box-shadow: 10px 10px 5px #000000;
+        -webkit-box-shadow: 10px 10px 5px #000000;
+        box-shadow: 10px 10px 5px #000000;
+    }
+
+    .bordesDorados {
+
+        border: dotted 7px #000000;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+    }
+
+    .bronce {
+        letter-spacing: 10px;
+        background-image: url("https://t1.pixers.pics/img-b5fce81d/wall-murals-bronze-or-copper-metal-texture.jpg?H4sIAAAAAAAAAyWNUQrCMBBEr9OCdLcb4yY5QH97hJLWrEa0hiSCeHojfs3wmMfAay9eAki815CLy6HET-gY8YC9k2d--Nrd0qWHa62pOICihhTfbdtiK_Dv0ASYZlAjWAJkMPRDyzSr0RKyoUUJaZaTlpECrey1bOaIntir1Vh7HtrLF6c9zD-OAAAA");
+
+    }
+
+    .oro {
+        letter-spacing: 10px;
+        background-image: url(" https://s3.pixers.pics/pixers/700/FO/83/16/95/63/700_FO83169563_5524b4fab3d61e7db8369983bf754113.jpg");
+
+    }
+
+    .silver {
+        letter-spacing: 10px;
+        background-image: url("https://texturex.com/wp-content/uploads/2018/03/texturex-brushed-titanium-aluminum-silver-metal-stock-texture-4-500x375.jpg");
+
+    }
+
+    #video_background {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1000;
+        overflow: hidden;
+    }
+
+    #video_pattern {
+        background: #fff;
+        position: fixed;
+        opacity: 0.8;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .gris {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
