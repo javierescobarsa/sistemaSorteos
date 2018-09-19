@@ -1,0 +1,92 @@
+<style>
+    .cajaTexto {
+
+        color: blue;
+    }
+</style>
+<div class="row">
+    <div class="col-md-12 col-12 card">
+        <h2> Jackpot</h2>
+        <table class="table table-striped">
+
+            <thead>
+                <th>
+                    Nº
+                </th>
+                <th>
+                    Premios
+                </th>
+
+                <th>
+                    %
+                </th>
+                <th>
+                    Pulsos
+                </th>
+                <th>
+
+                </th>
+            </thead>
+
+            <tbody id="cuerpoJackpot">
+            
+               
+                
+            </tbody>
+        </table>
+    </div>
+
+</div>
+<script src="modulos/jackpot/jackpot.js">
+
+
+
+</script>
+
+<div class="modal fade" id="modificarJackpot" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modificar Jackpot</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form onsubmit="guardarCambios(premioModal.value, pulsosModal.value,porcentajeModal.value,selectModal.value,ganadorModal.value); return false ">
+                    <div class="form-group">
+                        <label for="premioModal">Premio</label>
+                        <input type="number" class="form-control" id="premioModal" 
+                            placeholder="Ingrese el premio">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="pulsosModal">Pulsaciones</label>
+                        <input type="number" class="form-control" id="pulsosModal" 
+                            placeholder="Ingrese la cantidad de pulsaciones">
+                    </div>
+                    <div class="form-group">
+                            <label for="porcentajeModal">Porcentaje Actual</label>
+                            <input type="number" class="form-control" id="porcentajeModal" 
+                                placeholder="Ingrese el porcentaje Actual">
+                        </div>
+                        <div class="form-group">
+                                <label for="selectModal">Tipo Sorteo</label>
+                               <select class="form-control" id="selectModal"></select>
+                            </div>
+                            <div class="form-group" id="divGanador">
+                                    <label for="ganadorModal">Ganador</label>
+                                    <input type="number" class="form-control" id="ganadorModal" 
+                                    placeholder="Ingrese el ganador">
+                                </div>
+        
+
+                        
+                    <button type="submit" class="btn btn-primary">Actualizar</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -18,83 +18,33 @@
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="js/js.js"></script>
     <script src="js/firebase.js"></script>
-    <script src="js/movimientos.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <script src="js/utileria.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="css/estilo.css">
+
 </head>
-<style>
-    /* ---- reset ---- */
-    body {
-        margin: 0;
-        font: normal 75% Arial, Helvetica, sans-serif;
-    }
-
-    canvas {
-        display: block;
-        vertical-align: bottom;
-    }
-
-    /* ---- particles.js container ---- */
-    #particles-js {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: #fc000e;
-        background-image: url("");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 50% 50%;
-    }
-
-    /* ---- stats.js ---- */
-    .count-particles {
-        background: #000022;
-        position: absolute;
-        top: 48px;
-        left: 0;
-        width: 80px;
-        color: #13E8E9;
-        font-size: .8em;
-        text-align: left;
-        text-indent: 4px;
-        line-height: 14px;
-        padding-bottom: 2px;
-        font-family: Helvetica, Arial, sans-serif;
-        font-weight: bold;
-    }
-
-    .js-count-particles {
-        font-size: 1.1em;
-    }
-
-    #stats,
-    .count-particles {
-        -webkit-user-select: none;
-        margin-top: 5px;
-        margin-left: 5px;
-    }
-
-    #stats {
-        border-radius: 3px 3px 0 0;
-        overflow: hidden;
-    }
-
-    .count-particles {
-        border-radius: 0 0 3px 3px;
-    }
-</style>
-<!-- particles.js container -->
-<div id="particles-js" style="background-color:#2a1527;"></div> <!-- stats - count particles -->
-<div class="count-particles"> <span class="js-count-particles">--</span> particles </div>
-<!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
-<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">ChamaClub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" onclick="cargadorModulo('cuerpoApp', 'jackpot', 'listado')">JackPot </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#" onclick="cargadorModulo('cuerpoApp', 'sorteos', 'listado')">Sorteos</a>
+            </li>
 
+          </ul>
+      
+        </div>
+      </nav>
 
-    <script src="css/termometro.js"></script>
     <div class="container" id="cuerpoApp">
 
     </div>
@@ -106,9 +56,8 @@
 <script>
     $(document).ready(function () {
         console.log("readys!");
-       
+        cargadorModulo('cuerpoApp', 'jackpot', 'listado')
     });
 </script>
-<script src="js/particulas.js">
-</script>
+
 </html>
